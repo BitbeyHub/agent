@@ -40,6 +40,9 @@ Main (unreleased)
 
 - `pyroscope.ebpf` support python on arm64 platforms. (@korniltsev)
 
+- Added links between compatible components in the documentation to make it
+  easier to discover them. (@thampiotr)
+
 ### Bugfixes
 
 - Permit `X-Faro-Session-ID` header in CORS requests for the `faro.receiver`

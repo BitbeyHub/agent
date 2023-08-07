@@ -189,7 +189,7 @@ If the agent is _not_ running in clustered mode, then the block is a no-op, and
 
 ## Exported fields
 
-`prometheus.operator.probes` does not export any fields. It forwards all metrics it scrapes to the receiver configures with the `forward_to` argument.
+`prometheus.operator.probes` does not export any fields. It forwards all metrics it scrapes to the receivers configured with the `forward_to` argument.
 
 ## Component health
 
@@ -256,3 +256,16 @@ prometheus.operator.probes "probes" {
     }
 }
 ```
+<!-- START GENERATED COMPATIBLE COMPONENTS -->
+
+## Compatible components
+
+`prometheus.operator.probes` can accept arguments from the following components:
+
+- Components that export [Prometheus `MetricsReceiver`]({{< relref "../compatibility/#prometheus-metricsreceiver-exporters" >}})
+
+
+Note that connecting some components may not be feasible or components may require further configuration to make the connection work correctly. Please refer to the linked documentation for more details.
+
+
+<!-- END GENERATED COMPATIBLE COMPONENTS -->
