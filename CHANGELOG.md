@@ -10,6 +10,10 @@ internal API changes are not present.
 Main (unreleased)
 -----------------
 
+### Features
+
+- Added support for `loki.write` to flush WAL on agent shutdown. (@thepalbi)
+
 v0.38.0-rc.1 (2023-11-20)
 -------------------------
 
