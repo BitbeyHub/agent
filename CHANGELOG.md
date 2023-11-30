@@ -52,6 +52,10 @@ Main (unreleased)
 
 - Fix issue in `prometheus.operator.*` where targets would be dropped if two crds share a common prefix in their names. (@Paul424, @captncraig)
 
+- In Static mode's `traces` subsystem, `spanmetrics` used to be generated prior to load balancing.
+  This could lead to inaccurate metrics. This issue only affects Agents using both `spanmetrics` and 
+  `load_balancing`, when running in a load balanced cluster with more than one Agent instance. (@ptodev)
+
 v0.38.0 (2023-11-21)
 --------------------
 
