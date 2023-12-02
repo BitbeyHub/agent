@@ -25,4 +25,4 @@ mkdir -p ./grafana/dashboards
 curl https://raw.githubusercontent.com/grafana/agent/main/docs/sources/flow/tutorials/assets/grafana/dashboards/template.jsonnet -o ./grafana/dashboards/template.jsonnet
 curl https://raw.githubusercontent.com/grafana/agent/main/docs/sources/flow/tutorials/assets/grafana/dashboards/agent.json -o ./grafana/dashboards/agent.json
 docker pull grafana/agent:main 
-CONFIG_FILE=$1 docker-compose -f ./docker-compose.yaml up
+CONFIG_FILE=$1 docker compose -f ./docker-compose.yaml up
